@@ -15,7 +15,7 @@ if isTouchEnabled then
     getgenv().keytoclick = "V"
     local tool = Instance.new("Tool")
     tool.RequiresHandle = false
-    tool.Name = "Bate.cc"
+    tool.Name = "Bate.cc aimlock"
     tool.Activated:connect(function()
         VirtualInputManager:SendKeyEvent(true, keytoclick, false, game)
     end)
