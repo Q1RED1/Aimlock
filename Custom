@@ -1,6 +1,6 @@
 Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro2/main/ui2"))()
 local NotifyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro/main/ui"))()
-NotifyLib.prompt('Rainbow Sunshine', 'Modified & Created By: TheRealX_ORA on YT', 5)
+NotifyLib.prompt('Bate.cc', 'Created By: qzxred on discord,', 5)
 local UserInputService = game:GetService("UserInputService")
 local RunService = game:GetService("RunService")
 local VirtualInputManager = game:service("VirtualInputManager")
@@ -356,4 +356,4 @@ mt.__namecall = newcclosure(function(...)
     return old(...)
 end)
 
-NotifyLib.prompt('TheRealX_ORA', 'LOADED BATE.CC AIMLOCK!', 5)
+NotifyLib.prompt('Bate.cc', 'LOADED BATE.CC AIMLOCK! Inspired by sungod (when selected) not skidded', 5)
