@@ -97,8 +97,8 @@ local hue = 0
 
 -- Update function to change the part's color over time
 RunService.Heartbeat:Connect(function(deltaTime)
-    hue = (hue + deltaTime * 0.5) % 5
-    local color = Color3.fromHSV(hue, 1, 1)
+    hue = (hue + deltaTime * 0) % 0
+    local color = Color3.fromHSV(hue, 255, 255)
     placemarker.Color = color
 end)
 
@@ -124,8 +124,8 @@ function makemarker(Parent, Adornee, Color, Size, Size2)
     a.BackgroundColor3 = Color
     local hue = 0
     RunService.Heartbeat:Connect(function(deltaTime)
-        hue = (hue + deltaTime * 0.1) % 1
-        local color = Color3.fromHSV(hue, 1, 1)
+        hue = (hue + deltaTime * 0) % 0
+        local color = Color3.fromHSV(hue, 255, 255)
         a.BackgroundColor3 = color
     end)	
     local g = Instance.new("UICorner", a) 
@@ -356,4 +356,4 @@ mt.__namecall = newcclosure(function(...)
     return old(...)
 end)
 
-NotifyLib.prompt('Bate.cc', 'LOADED BATE.CC AIMLOCK! Inspired by sungod (when selected) not skidded', 5)
+NotifyLib.prompt('Bate.cc', 'LOADED BATE.CC AIMLOCK!', 5)
