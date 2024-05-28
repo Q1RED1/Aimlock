@@ -1,6 +1,6 @@
 Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro2/main/ui2"))()
 local NotifyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro/main/ui"))()
-NotifyLib.prompt('Bate.cc', 'Created By: qzxred on discord,', 5)
+NotifyLib.prompt('Beat.cc', 'Created By: qzxred on discord,', 5)
 local UserInputService = game:GetService("UserInputService")
 local RunService = game:GetService("RunService")
 local VirtualInputManager = game:service("VirtualInputManager")
@@ -15,7 +15,7 @@ if isTouchEnabled then
     getgenv().keytoclick = "V"
     local tool = Instance.new("Tool")
     tool.RequiresHandle = false
-    tool.Name = "Bate.cc aimlock"
+    tool.Name = "Beat.cc aimlock"
     tool.Activated:connect(function()
         VirtualInputManager:SendKeyEvent(true, keytoclick, false, game)
     end)
@@ -26,13 +26,13 @@ if isTouchEnabled then
     end)
     NotifyLib.prompt('Mobile V Tool', 'V Tool Has Successfully Loaded!', 5)    
 elseif isMouseEnabled and isMouseEnabled then
-    NotifyLib.prompt('Pc Device Detected', 'Smite them with V!', 5)
+    NotifyLib.prompt('Pc Device Detected', 'Beat them with V!', 5)
 elseif isGamepadEnabled and isTouchEnabled then
     NotifyLib.prompt('Controller And Mobile Device Detected', 'Loading V Tool..', 5)
     getgenv().keytoclick = "V"
     local tool = Instance.new("Tool")
     tool.RequiresHandle = false
-    tool.Name = "Smite"
+    tool.Name = "Beat.cc"
    tool.Activated:connect(function()
         VirtualInputManager:SendKeyEvent(true, keytoclick, false, game)
     end)
@@ -47,7 +47,7 @@ elseif isMouseEnabled and isMouseEnabled and isTouchEnabled then
     getgenv().keytoclick = "V"
     local tool = Instance.new("Tool")
     tool.RequiresHandle = false
-    tool.Name = "Bate.cc"
+    tool.Name = "Beat.cc"
     tool.Activated:connect(function()
         VirtualInputManager:SendKeyEvent(true, keytoclick, false, game)
     end)
@@ -356,4 +356,4 @@ mt.__namecall = newcclosure(function(...)
     return old(...)
 end)
 
-NotifyLib.prompt('Bate.cc', 'LOADED BATE.CC AIMLOCK!', 5)
+NotifyLib.prompt('Beat.cc', 'LOADED Beat.cc AIMLOCK!', 5)
